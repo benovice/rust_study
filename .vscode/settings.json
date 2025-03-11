@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true, // 저장 시 자동 포맷 활성화
+  "editor.defaultFormatter": "rust-lang.rust-analyzer", // Rust Analyzer를 기본 포맷터로 설정
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true // 저장 시 자동으로 import 정리
+  }
+}

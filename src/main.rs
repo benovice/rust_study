@@ -1,13 +1,11 @@
-mod utils;
 mod api;
+mod utils;
 
-use api::api::get_test_api;
-use utils::is_test::is_submodule_test;
-use utils::is_module_test;
+use std::env::args;
 
 fn main() {
-    get_test_api();
-    is_module_test("module");
-    is_submodule_test("submodule");
-    println!("Hello, world!");
+    let file_path = args().nth(1).expect("no pattern given");
+    let path = args().nth(2).expect("no path given");
+
+    println!("pattern: {:?}, path: {:?}", file_path, path)
 }

@@ -1,0 +1,4 @@
+max_width = 100      # 한 줄 최대 길이 (기본: 100)
+tab_spaces = 4       # 탭 대신 4개의 스페이스 사용
+hard_tabs = false    # 하드 탭 사용 여부 (true면 탭, false면 스페이스)
+reorder_imports = true
